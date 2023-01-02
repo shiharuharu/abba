@@ -237,17 +237,17 @@ $("tbody > tr").each(function(index) {
 	icon.html(create_icon(icon_class.classes, icon_class.title));
 
 	// Generate a beautified date string
-	var m = moment(date.html(), "YYYY-MM-DD HH:mm");
+	// var m = moment(date.html(), "YYYY-MM-DD HH:mm");
 
-	if (m_server.diff(m, "days", true) < 1) {
-		date.html(m.from(m_server));
+	// if (m_server.diff(m, "days", true) < 1) {
+	// 	date.html(m.from(m_server));
 
-	} else if (m_server.diff(m, "weeks", true) < 1) {
-		date.html(m.format("dddd LT"));
+	// } else if (m_server.diff(m, "weeks", true) < 1) {
+	// 	date.html(m.format("dddd LT"));
 
-	} else {
-		date.html(m.format("LLL"));
-	}
+	// } else {
+	// 	date.html(m.format("LLL"));
+	// }
 
 	// Generate stretched links in all cells to give the illusion
 	// of a complete row for better compatibility.

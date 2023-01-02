@@ -42,7 +42,7 @@ Local previews can be achieved by using the [test docker image](docker):
 docker run --rm --tty --interactive \
     --publish 8080:80 \
     --volume ${PWD}:/var/www \
-    jmlemetayer/abba
+    shiharuharu/abba
 ```
 
 These previews allow you to test all the available themes and features locally

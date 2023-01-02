@@ -29,7 +29,7 @@
 	// Center the "Last modified" and "Size" column
 	tbody td:nth-child(n+3),
 	thead th:nth-child(n+3) {
-		@extend .text-center;
+		@extend .text-end;
 	}
 
 	// Stretched link wrapper padding

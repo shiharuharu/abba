@@ -20,7 +20,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: jmlemetayer/abba
+          images: shiharuharu/abba
           flavor: |
             latest=true
 

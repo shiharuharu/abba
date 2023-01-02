@@ -11,7 +11,7 @@ To preview ABBA in your local directory you just have to run:
     docker run --rm --tty --interactive \
         --publish 8080:80 \
         --volume ${PWD}:/var/www \
-        jmlemetayer/abba
+        shiharuharu/abba
 
 Once the install is done you should be able to reach http://localhost:8080.
 
@@ -42,7 +42,7 @@ Finally, in your test directory, run the test container:
         --publish 8080:80 \
         --volume ${PWD}:/var/www \
         --network abba --env BASE_URL="http://abba-builder:4000" \
-        jmlemetayer/abba
+        shiharuharu/abba
 
 ## Enable debugging
 
@@ -50,6 +50,5 @@ Debug traces can be enabled by setting the `DEBUG` environment variable:
 
     --env DEBUG=true
 
-[hub.docker]: https://hub.docker.com/r/jmlemetayer/abba
-[dockeri.co]: https://dockeri.co/image/jmlemetayer/abba
+[hub.docker]: https://hub.docker.com/r/shiharuharu/abba
 [github-pages]: https://hub.docker.com/r/jmlemetayer/github-pages
